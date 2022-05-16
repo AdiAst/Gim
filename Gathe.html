@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gathe</title>
+    <style>
+      canvas {
+        background-color: #202020;
+      }
+    </style>
+  </head>
+  <body onload="startGame()">
+    <script src="script.js"></script>
+    <div style="text-align: center; width: 480px">
+      <button onclick="move('up')">UP</button><br /><br />
+      <button
+        onmousedown="move('left')"
+        onmouseup="clearmove()"
+        ontouchstart="move('left')"
+      >
+        LEFT
+      </button>
+      <button
+        onmousedown="move('right')"
+        onmouseup="clearmove()"
+        ontouchstart="move('right')"
+      >
+        RIGHT</button
+      ><br /><br />
+    </div>
+
+    <p>
+      Update the background before updating other components to make sure the
+      other components are dispalyed on top of the background.
+    </p>
+  </body>
+</html>
